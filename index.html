@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Ubezpieczeniowe – Jonatan Szyjkowski</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: #0b3d91;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta {
+      background: #d4af37;
+      color: #0b3d91;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta:hover {
+      background: #c19b2e;
+    }
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #0b3d91;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+      }
+      nav.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+      background: #fff;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #0b3d91;
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #f4f4f4;
+      margin: 10px 0;
+      padding: 12px;
+      border-left: 5px solid #d4af37;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    blockquote {
+      font-style: italic;
+      background: #f4f4f4;
+      padding: 15px;
+      border-left: 5px solid #0b3d91;
+      margin: 10px 0;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    button.cta {
+      background: #d4af37;
+      color: #0b3d91;
+      border: none;
+      cursor: pointer;
+    }
+    button.cta:hover {
+      background: #c19b2e;
+    }
+    a.whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    a.whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+    footer {
+      background: #0b3d91;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Portfolio Ubezpieczeniowe</h1>
+  <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+    <i class="fas fa-bars"></i>
+  </div>
+  <nav>
+    <a href="#o-mnie">O mnie</a>
+    <a href="#oferta">Oferta</a>
+    <a href="#dlaczego">Dlaczego warto</a>
+    <a href="#opinie">Opinie</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a href="#kontakt" class="cta">Skontaktuj się</a>
+</header>
+
+<section id="o-mnie">
+  <h2>O mnie</h2>
+  <p>Jestem profesjonalistą z wieloletnim doświadczeniem w branży ubezpieczeniowej. Moim celem jest zapewnienie klientom poczucia bezpieczeństwa i wsparcia w każdej sytuacji życiowej.</p>
+</section>
+
+<section id="oferta">
+  <h2>Oferta</h2>
+  <ul>
+    <li><i class="fas fa-car"></i> Ubezpieczenia komunikacyjne</li>
+    <li><i class="fas fa-home"></i> Ubezpieczenia majątkowe</li>
+    <li><i class="fas fa-heart"></i> Ubezpieczenia na życie</li>
+    <li><i class="fas fa-plane"></i> Ubezpieczenia turystyczne</li>
+    <li><i class="fas fa-briefcase"></i> Ubezpieczenia firmowe</li>
+  </ul>
+</section>
+
+<section id="dlaczego">
+  <h2>Dlaczego warto?</h2>
+  <ul>
+    <li><i class="fas fa-user-check"></i> Indywidualne podejście do klienta</li>
+    <li><i class="fas fa-bolt"></i> Szybka i profesjonalna obsługa</li>
+    <li><i class="fas fa-handshake"></i> Współpraca z wieloma towarzystwami ubezpieczeniowymi</li>
+    <li><i class="fas fa-life-ring"></i> Pomoc w likwidacji szkód</li>
+  </ul>
+</section>
+
+<section id="opinie">
+  <h2>Opinie klientów</h2>
+  <blockquote>„Pełen profesjonalizm i szybka reakcja – polecam!”</blockquote>
+  <blockquote>„Dzięki pomocy Jonatana czuję się bezpiecznie w każdej sytuacji.”</blockquote>
+</section>
+
+<section id="kontakt" class="contact">
+  <h2>Kontakt</h2>
+  <p><strong>Jonatan Szyjkowski</strong></p>
+  <p>ul. Kazimierza Wielkiego 5/18</p>
+  <p>87-300 Brodnica</p>
+  <p>📞 <a href="tel:+48504174696">504 174 696</a></p>
+  <p>✉️ <a href="mailto:j.szyjkowski@spoldzielnia-osa.pl">j.szyjkowski@spoldzielnia-osa.pl</a></p>
+
+  <a href="https://wa.me/48504174696" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Napisz na WhatsApp
+  </a>
+
+  <form action="mailto:j.szyjkowski@spoldzielnia-osa.pl" method="post" enctype="text/plain">
+    <label for="name">Imię i nazwisko:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Adres e-mail:</label>
+    <input type="email" id="email" name="email
